@@ -22,6 +22,13 @@ namespace RS_Farming
         private void HideAllMenus()
         {
             AllotmentPatchesGroup.Visible = false;
+            AllotmentPatchesGroup.Refresh();
+            var children = AllotmentPatchesGroup;
+        }
+
+        private void ClearAllMenus()
+        {
+
         }
 
         private void LoadLocations()
@@ -36,7 +43,7 @@ namespace RS_Farming
 
         private void Locations_SelectedIndexChanged(object sender, EventArgs e)
         {
-            HideAllMenus();
+            ClearAllMenus();
 
             dynamic selectedLocation = Locations.SelectedItem;
             var unboxedSelection = new Location { Name = selectedLocation.Name, PatchesForLocation = selectedLocation.PatchesForLocation };
