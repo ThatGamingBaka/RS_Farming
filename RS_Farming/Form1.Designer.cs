@@ -31,24 +31,25 @@
             this.LocationLabel = new System.Windows.Forms.Label();
             this.Locations = new System.Windows.Forms.ComboBox();
             this.AllotmentPatchesGroup = new System.Windows.Forms.GroupBox();
-            this.AllotmentHerbComboBox = new System.Windows.Forms.ComboBox();
-            this.AllotmentFlowerComboBox = new System.Windows.Forms.ComboBox();
-            this.AllotmentPatchComboBox2 = new System.Windows.Forms.ComboBox();
-            this.AllotmentPatchComboBox1 = new System.Windows.Forms.ComboBox();
-            this.AllotmentPatch1Btn = new System.Windows.Forms.Button();
-            this.AllotmentPatch2Btn = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.FlowerPatchBtn = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.HerbPatchBtn = new System.Windows.Forms.Button();
+            this.AllotmentHerbComboBox = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.FlowerPatchBtn = new System.Windows.Forms.Button();
+            this.AllotmentFlowerComboBox = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.AllotmentPatch2Btn = new System.Windows.Forms.Button();
+            this.AllotmentPatchComboBox2 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AllotmentPatchComboBox1 = new System.Windows.Forms.ComboBox();
+            this.AllotmentPatch1Btn = new System.Windows.Forms.Button();
             this.ResultBox = new System.Windows.Forms.RichTextBox();
+            this.PrintBtn = new System.Windows.Forms.Button();
             this.AllotmentPatchesGroup.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LocationLabel
@@ -82,6 +83,28 @@
             this.AllotmentPatchesGroup.TabStop = false;
             this.AllotmentPatchesGroup.Text = "Allotment Patches";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.Controls.Add(this.HerbPatchBtn);
+            this.groupBox4.Controls.Add(this.AllotmentHerbComboBox);
+            this.groupBox4.Location = new System.Drawing.Point(6, 263);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(236, 74);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Herb patch";
+            // 
+            // HerbPatchBtn
+            // 
+            this.HerbPatchBtn.Location = new System.Drawing.Point(6, 46);
+            this.HerbPatchBtn.Name = "HerbPatchBtn";
+            this.HerbPatchBtn.Size = new System.Drawing.Size(89, 23);
+            this.HerbPatchBtn.TabIndex = 9;
+            this.HerbPatchBtn.Text = "Plant";
+            this.HerbPatchBtn.UseVisualStyleBackColor = true;
+            this.HerbPatchBtn.Click += new System.EventHandler(this.HerbPatchBtn_Click);
+            // 
             // AllotmentHerbComboBox
             // 
             this.AllotmentHerbComboBox.FormattingEnabled = true;
@@ -89,76 +112,6 @@
             this.AllotmentHerbComboBox.Name = "AllotmentHerbComboBox";
             this.AllotmentHerbComboBox.Size = new System.Drawing.Size(219, 21);
             this.AllotmentHerbComboBox.TabIndex = 11;
-            // 
-            // AllotmentFlowerComboBox
-            // 
-            this.AllotmentFlowerComboBox.FormattingEnabled = true;
-            this.AllotmentFlowerComboBox.Location = new System.Drawing.Point(6, 19);
-            this.AllotmentFlowerComboBox.Name = "AllotmentFlowerComboBox";
-            this.AllotmentFlowerComboBox.Size = new System.Drawing.Size(219, 21);
-            this.AllotmentFlowerComboBox.TabIndex = 9;
-            // 
-            // AllotmentPatchComboBox2
-            // 
-            this.AllotmentPatchComboBox2.FormattingEnabled = true;
-            this.AllotmentPatchComboBox2.Location = new System.Drawing.Point(6, 19);
-            this.AllotmentPatchComboBox2.Name = "AllotmentPatchComboBox2";
-            this.AllotmentPatchComboBox2.Size = new System.Drawing.Size(219, 21);
-            this.AllotmentPatchComboBox2.TabIndex = 7;
-            // 
-            // AllotmentPatchComboBox1
-            // 
-            this.AllotmentPatchComboBox1.FormattingEnabled = true;
-            this.AllotmentPatchComboBox1.Location = new System.Drawing.Point(6, 19);
-            this.AllotmentPatchComboBox1.Name = "AllotmentPatchComboBox1";
-            this.AllotmentPatchComboBox1.Size = new System.Drawing.Size(219, 21);
-            this.AllotmentPatchComboBox1.TabIndex = 0;
-            // 
-            // AllotmentPatch1Btn
-            // 
-            this.AllotmentPatch1Btn.Location = new System.Drawing.Point(6, 46);
-            this.AllotmentPatch1Btn.Name = "AllotmentPatch1Btn";
-            this.AllotmentPatch1Btn.Size = new System.Drawing.Size(89, 23);
-            this.AllotmentPatch1Btn.TabIndex = 7;
-            this.AllotmentPatch1Btn.Text = "Plant";
-            this.AllotmentPatch1Btn.UseVisualStyleBackColor = true;
-            this.AllotmentPatch1Btn.Click += new System.EventHandler(this.AllotmentPatch1Btn_Click);
-            // 
-            // AllotmentPatch2Btn
-            // 
-            this.AllotmentPatch2Btn.Location = new System.Drawing.Point(6, 43);
-            this.AllotmentPatch2Btn.Name = "AllotmentPatch2Btn";
-            this.AllotmentPatch2Btn.Size = new System.Drawing.Size(89, 23);
-            this.AllotmentPatch2Btn.TabIndex = 8;
-            this.AllotmentPatch2Btn.Text = "Plant";
-            this.AllotmentPatch2Btn.UseVisualStyleBackColor = true;
-            this.AllotmentPatch2Btn.Click += new System.EventHandler(this.AllotmentPatch2Btn_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Controls.Add(this.AllotmentPatchComboBox1);
-            this.groupBox1.Controls.Add(this.AllotmentPatch1Btn);
-            this.groupBox1.Location = new System.Drawing.Point(6, 19);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 77);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Allotment patch I";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox2.Controls.Add(this.AllotmentPatch2Btn);
-            this.groupBox2.Controls.Add(this.AllotmentPatchComboBox2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(6, 102);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(236, 73);
-            this.groupBox2.TabIndex = 13;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Allotment patch II";
             // 
             // groupBox3
             // 
@@ -182,41 +135,100 @@
             this.FlowerPatchBtn.UseVisualStyleBackColor = true;
             this.FlowerPatchBtn.Click += new System.EventHandler(this.FlowerPatchBtn_Click);
             // 
-            // groupBox4
+            // AllotmentFlowerComboBox
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox4.Controls.Add(this.HerbPatchBtn);
-            this.groupBox4.Controls.Add(this.AllotmentHerbComboBox);
-            this.groupBox4.Location = new System.Drawing.Point(6, 263);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(236, 74);
-            this.groupBox4.TabIndex = 14;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Herb patch";
+            this.AllotmentFlowerComboBox.FormattingEnabled = true;
+            this.AllotmentFlowerComboBox.Location = new System.Drawing.Point(6, 19);
+            this.AllotmentFlowerComboBox.Name = "AllotmentFlowerComboBox";
+            this.AllotmentFlowerComboBox.Size = new System.Drawing.Size(219, 21);
+            this.AllotmentFlowerComboBox.TabIndex = 9;
             // 
-            // HerbPatchBtn
+            // groupBox2
             // 
-            this.HerbPatchBtn.Location = new System.Drawing.Point(6, 46);
-            this.HerbPatchBtn.Name = "HerbPatchBtn";
-            this.HerbPatchBtn.Size = new System.Drawing.Size(89, 23);
-            this.HerbPatchBtn.TabIndex = 9;
-            this.HerbPatchBtn.Text = "Plant";
-            this.HerbPatchBtn.UseVisualStyleBackColor = true;
-            this.HerbPatchBtn.Click += new System.EventHandler(this.HerbPatchBtn_Click);
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.Controls.Add(this.AllotmentPatch2Btn);
+            this.groupBox2.Controls.Add(this.AllotmentPatchComboBox2);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox2.Location = new System.Drawing.Point(6, 102);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(236, 73);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Allotment patch II";
+            // 
+            // AllotmentPatch2Btn
+            // 
+            this.AllotmentPatch2Btn.Location = new System.Drawing.Point(6, 43);
+            this.AllotmentPatch2Btn.Name = "AllotmentPatch2Btn";
+            this.AllotmentPatch2Btn.Size = new System.Drawing.Size(89, 23);
+            this.AllotmentPatch2Btn.TabIndex = 8;
+            this.AllotmentPatch2Btn.Text = "Plant";
+            this.AllotmentPatch2Btn.UseVisualStyleBackColor = true;
+            this.AllotmentPatch2Btn.Click += new System.EventHandler(this.AllotmentPatch2Btn_Click);
+            // 
+            // AllotmentPatchComboBox2
+            // 
+            this.AllotmentPatchComboBox2.FormattingEnabled = true;
+            this.AllotmentPatchComboBox2.Location = new System.Drawing.Point(6, 19);
+            this.AllotmentPatchComboBox2.Name = "AllotmentPatchComboBox2";
+            this.AllotmentPatchComboBox2.Size = new System.Drawing.Size(219, 21);
+            this.AllotmentPatchComboBox2.TabIndex = 7;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Controls.Add(this.AllotmentPatchComboBox1);
+            this.groupBox1.Controls.Add(this.AllotmentPatch1Btn);
+            this.groupBox1.Location = new System.Drawing.Point(6, 19);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(236, 77);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Allotment patch I";
+            // 
+            // AllotmentPatchComboBox1
+            // 
+            this.AllotmentPatchComboBox1.FormattingEnabled = true;
+            this.AllotmentPatchComboBox1.Location = new System.Drawing.Point(6, 19);
+            this.AllotmentPatchComboBox1.Name = "AllotmentPatchComboBox1";
+            this.AllotmentPatchComboBox1.Size = new System.Drawing.Size(219, 21);
+            this.AllotmentPatchComboBox1.TabIndex = 0;
+            // 
+            // AllotmentPatch1Btn
+            // 
+            this.AllotmentPatch1Btn.Location = new System.Drawing.Point(6, 46);
+            this.AllotmentPatch1Btn.Name = "AllotmentPatch1Btn";
+            this.AllotmentPatch1Btn.Size = new System.Drawing.Size(89, 23);
+            this.AllotmentPatch1Btn.TabIndex = 7;
+            this.AllotmentPatch1Btn.Text = "Plant";
+            this.AllotmentPatch1Btn.UseVisualStyleBackColor = true;
+            this.AllotmentPatch1Btn.Click += new System.EventHandler(this.AllotmentPatch1Btn_Click);
             // 
             // ResultBox
             // 
-            this.ResultBox.Location = new System.Drawing.Point(400, 25);
+            this.ResultBox.Location = new System.Drawing.Point(15, 444);
             this.ResultBox.Name = "ResultBox";
-            this.ResultBox.Size = new System.Drawing.Size(388, 413);
+            this.ResultBox.Size = new System.Drawing.Size(773, 156);
             this.ResultBox.TabIndex = 15;
             this.ResultBox.Text = "";
+            // 
+            // PrintBtn
+            // 
+            this.PrintBtn.Location = new System.Drawing.Point(15, 606);
+            this.PrintBtn.Name = "PrintBtn";
+            this.PrintBtn.Size = new System.Drawing.Size(82, 23);
+            this.PrintBtn.TabIndex = 16;
+            this.PrintBtn.Text = "Print to textfile";
+            this.PrintBtn.UseVisualStyleBackColor = true;
+            this.PrintBtn.Click += new System.EventHandler(this.PrintBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 636);
+            this.Controls.Add(this.PrintBtn);
             this.Controls.Add(this.ResultBox);
             this.Controls.Add(this.AllotmentPatchesGroup);
             this.Controls.Add(this.Locations);
@@ -225,10 +237,10 @@
             this.Text = "Runescape - Farming Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.AllotmentPatchesGroup.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +263,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button AllotmentPatch1Btn;
         private System.Windows.Forms.RichTextBox ResultBox;
+        private System.Windows.Forms.Button PrintBtn;
     }
 }
 
