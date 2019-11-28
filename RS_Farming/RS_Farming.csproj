@@ -53,6 +53,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Crop.cs" />
+    <Compile Include="Models\HarvestData.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Patch.cs" />
+    <Compile Include="Models\Shared.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

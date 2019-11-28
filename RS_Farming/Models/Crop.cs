@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace RS_Farming.Models
 {
-    enum Type { Allotment, Hop, Bush, Tree, Fruit_Tree, Cactus, Mushroom }
-    enum SubType { Allotment, Flower, Herb}
-
-    class Crop
+    public class Crop
     {
         public string Name;
         public Type Type;
         public int GrowTimeInMinutes;
         public SubType SubType;
+    }
 
-        public static List<Crop> GetCrops()
-        {
-            return new List<Crop>()
+    public class Crops
+    {
+        public List<Crop> All = new List<Crop>()
             {
                 new Crop{ Type = Type.Allotment, SubType = SubType.Allotment, Name = "Potato", GrowTimeInMinutes = 40 },
                 new Crop{ Type = Type.Allotment, SubType = SubType.Allotment, Name = "Onion", GrowTimeInMinutes = 40 },
@@ -59,9 +53,7 @@ namespace RS_Farming.Models
                 new Crop{ Type = Type.Allotment, SubType = SubType.Herb, Name = "Dwarf weed", GrowTimeInMinutes = 80 },
                 new Crop{ Type = Type.Allotment, SubType = SubType.Herb, Name = "Torstol", GrowTimeInMinutes = 80 },
                 new Crop{ Type = Type.Allotment, SubType = SubType.Herb, Name = "Fellstalk", GrowTimeInMinutes = 80 }
-
-
             };
-        }
     }
 }
+
